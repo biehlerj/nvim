@@ -38,3 +38,5 @@ end)
 lsp.nvim_workspace()
 
 lsp.setup()
+
+require("mason-update-all").setup()
