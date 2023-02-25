@@ -4,16 +4,8 @@ lsp.preset('recommended')
 lsp.ensure_installed({
 	'tsserver',
 	'eslint',
-	'sumneko_lua',
+	'lua_ls',
 	'rust_analyzer',
-})
-
-lsp.configure('sumneko_lua', {
-	settings = {
-		telemetry = {
-			enable = false
-		}
-	}
 })
 
 local cmp = require('cmp')
