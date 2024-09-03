@@ -1,1 +1,1 @@
-require("biehlerj")
+require("config.lazy")
