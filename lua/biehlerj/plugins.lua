@@ -63,7 +63,12 @@ return {
 			vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 		end
 	},
-	{ 'tpope/vim-fugitive' },
+	{
+		'tpope/vim-fugitive',
+		config = function ()
+			vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
+		end
+	},
 	{
 		'VonHeikemen/lsp-zero.nvim',
 		branch = 'v4.x',
@@ -239,4 +244,15 @@ return {
 	{ 'jayp0521/mason-null-ls.nvim' },
 	{ 'RubixDev/mason-update-all' },
 	{ 'lewis6991/gitsigns.nvim' },
+	{
+		"nvim-neorg/neorg",
+		-- lazy-load on filetype
+		ft = "norg",
+		-- options for neorg. This will automatically call `require("neorg").setup(opts)`
+		opts = {
+			load = {
+				["core.defaults"] = {},
+			},
+		},
+	},
 }
