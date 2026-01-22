@@ -23,3 +23,4 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 vim.opt.signcolumn = 'yes'
 vim.opt.autochdir = true
+vim.opt.clipboard = "unnamedplus"
