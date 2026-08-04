@@ -239,8 +239,8 @@ return {
 	},
 	{ 'mfussenegger/nvim-dap' },
 	{ 'jayp0521/mason-nvim-dap.nvim' },
-	{ 'jose-elias-alvarez/null-ls.nvim' },
-	{ 'jayp0521/mason-null-ls.nvim' },
+	{ 'nvimtools/none-ls.nvim' },
+	{ 'jay-babu/mason-null-ls.nvim' },
 	{ 'RubixDev/mason-update-all' },
 	{
 		'lewis6991/gitsigns.nvim',
